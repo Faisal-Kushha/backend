@@ -39,6 +39,7 @@ server.post("/addFruit", addHandler);
 
 async function addHandler(req, res) {
   const { name, image, price, email } = req.body;
+  console.log(email);
   fruitModel.create({
     name: name,
     image: image,
